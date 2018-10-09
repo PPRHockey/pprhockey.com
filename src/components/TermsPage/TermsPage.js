@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Checkout from '../Checkout/Checkout.js';
+import Checkout from '../../Checkout.js';
 
 import Nav from '../Nav/Nav';
 import { USER_ACTIONS } from '../../redux/actions/userActions';
@@ -14,7 +14,7 @@ const mapStateToProps = state => ({
 
 class TermsPage extends Component {
   componentDidMount() {
-    this.props.dispatch({type: USER_ACTIONS.FETCH_USER});
+    this.props.dispatch({ type: USER_ACTIONS.FETCH_USER });
   }
 
   componentDidUpdate() {
@@ -52,33 +52,38 @@ class TermsPage extends Component {
     let content = null;
 
     // if (this.props.user.email) {
-      content = (
-        <div>
-          <p>
-            Terms Page
+    content = (
+      <div>
+        <p>
+          Terms Page
           </p>
 
-          {/* buttons for generating mock data  DELETE BEFORE FINAL BUILD*/}
-          <button type="button" onClick={this.handlePlayerClick}>Mock Players</button>
-          <button type="button" onClick={this.handleCoachClick}>Mock Coaches</button>
-          {/* ******************* */}
+        {/* buttons for generating mock data  DELETE BEFORE FINAL BUILD*/}
+        <button type="button" onClick={this.handlePlayerClick}>Mock Players</button>
+        <button type="button" onClick={this.handleCoachClick}>Mock Coaches</button>
+        {/* ******************* */}
 
 
 
-
-  <Checkout 
-        name={'Power Play Recruiter'}
-        description={'Subscription'}
-        amount={29.95}
+        {/*TESTING CHECKOUT BELOW*/}
+        <Checkout
+          name={'Power Play Recruiter'}
+          description={'Subscription'}
+          amount={29.95}
         />
-        </div>
-      );
-    
+
+
+
+
+
+      </div>
+    );
+
 
     return (
       <div>
         <Nav />
-        { content }
+        {content}
       </div>
     );
   }

@@ -1,6 +1,6 @@
 const STRIPE_PUBLISHABLE = process.env.NODE_ENV === 'production'
-  ? 'STRIPE_API_TEST_KEY'
-  : 'STRIPE_API_TEST_KEY';
+  ? 'pk_test_dUQIFPQY2uUrRFrCBqQkufhY'
+  : 'pk_test_dUQIFPQY2uUrRFrCBqQkufhY';
   
 
 export default STRIPE_PUBLISHABLE;

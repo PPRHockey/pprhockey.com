@@ -11,20 +11,17 @@ const postStripeCharge = res => (stripeErr, stripeRes) => {
 // var stripe = require("stripe")("sk_test_XViNXrM3ecY7ZuRpE8KLSoeD");
 
 // stripe.subscriptions.create({
-//   customer: {},
+//   customer: {test_customer},
 //   items: [
 //     {
 //       plan: pro-monthly,
 //     },
 //   ],
 // }, {
-//   stripe_account: {acct_1DHFcCGYfeEu0gU4},
+//   stripe_account: {test_account},
 // }, function(err, subscription) {
 //   // asynchronously called
 // });
-
-
-
 
 
 
