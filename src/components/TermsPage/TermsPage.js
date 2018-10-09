@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Checkout from '../Checkout/Checkout.js';
 
 import Nav from '../Nav/Nav';
 import { USER_ACTIONS } from '../../redux/actions/userActions';
@@ -62,6 +63,14 @@ class TermsPage extends Component {
           <button type="button" onClick={this.handleCoachClick}>Mock Coaches</button>
           {/* ******************* */}
 
+
+
+
+  <Checkout 
+        name={'Power Play Recruiter'}
+        description={'Subscription'}
+        amount={29.95}
+        />
         </div>
       );
     
