@@ -63,19 +63,6 @@ class TermsPage extends Component {
         <button type="button" onClick={this.handleCoachClick}>Mock Coaches</button>
         {/* ******************* */}
 
-
-
-        {/*TESTING CHECKOUT BELOW*/}
-        <Checkout
-          name={'Power Play Recruiter'}
-          description={'Subscription'}
-          amount={29.95}
-        />
-
-
-
-
-
       </div>
     );
 
