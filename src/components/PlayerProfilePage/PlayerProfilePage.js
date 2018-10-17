@@ -13,7 +13,7 @@ import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
-
+import Dialog from '@material-ui/core/Dialog';
 
 
 
@@ -160,10 +160,11 @@ class PlayerProfilePage extends Component {
     if (this.props.user.email) {
       content = (
         <div>
+          
           {/* <Image className="profilePic" src="https://eadb.org/wp-content/uploads/2015/08/profile-label.jpg" alt="Avatar" /> */}
           <div className="profile-form-container">
             <h1>Enter Information</h1>
-            {/* <form onSubmit={this.submitPlayerProfile} onChange={this.handleProfileChange}>
+            <form onSubmit={this.submitPlayerProfile} onChange={this.handleProfileChange}>
                   <div className="playerFormSection">
                     <TextField type="text" label="First Name" value={this.state.profile.first_name} onChange={this.handleProfileChange} name="first_name" />
                     <TextField type="text" label="Last Name" value={this.state.profile.last_name} onChange={this.handleProfileChange} name="last_name" />
@@ -194,8 +195,8 @@ class PlayerProfilePage extends Component {
                       </Select>
                     </FormControl>
                   </div>
-                  {/* {JSON.stringify(this.state.profile.position_id)} */}
-                {/* <div className="playerFormSection">
+                   {JSON.stringify(this.state.profile.position_id)}
+                <div className="playerFormSection">
                   <TextField label="Video URL" value={this.state.profile.video_link} onChange={this.handleProfileChange} name="video_link" />
                   <FormControl>
                     <InputLabel>League</InputLabel>
@@ -220,7 +221,7 @@ class PlayerProfilePage extends Component {
                   </FormControl>
                   <label>Date Of Birth:</label>
                   {/* (WE WILL REPLACE THIS DROP-DOWN WITH A UI-MATERIALS CALENDAR) */}
-                  {/* <FormControl>
+                   <FormControl>
                     <InputLabel>DOB</InputLabel>
                     <Select value={this.state.profile.birth_date} onChange={this.handleProfileChange} name="birth_date">
                       <MenuItem value="1">Jan, 1956</MenuItem>
@@ -233,23 +234,28 @@ class PlayerProfilePage extends Component {
                   <label>Notes:</label>
                   <TextField value={this.state.profile.player_info} onChange={this.handleProfileChange} name="player_info" />
                 </div>
-                {/* we can implempent an image hosting API for client drag/drop HERE \/ */}
-                {/* <div className="playerFormSection">
+                {/*
+                 we can implempent 
+                 an image hosting 
+                 API for client 
+                 drag/drop HERE \/ */}
+                <div className="playerFormSection">
                   <Button variant="contained" color="secondary">Add a pic</Button>
                 </div>
                 <div>
-                  {/* <Button variant="contained" color="secondary" type="submit">Submit</Button> */}
-                {/* </div>
+                   <Button variant="contained" color="secondary" type="submit">Submit</Button>
+                 </div>
                 <div>
                   {positionalContent}
                 </div>
-            </form> */} 
-            {/* 
-              <form>
+            </form> 
+            
+            
             
             
             */}
           </div>
+          
         </div>
       );
     }
