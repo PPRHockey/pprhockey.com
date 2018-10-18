@@ -9,10 +9,7 @@ import ReactDOM from 'react-dom';
 
 
 import moment from 'moment';
-
 import Button from '@material-ui/core/Button';
-
-
 import PlayerProfileDialog from './PlayerProfileDialog';
 
 const mapStateToProps = state => ({
