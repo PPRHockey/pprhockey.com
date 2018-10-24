@@ -92,7 +92,6 @@ A full page dialog showing more details about a player.
 
 Admin view of the list of coaches. Admin can suspend delete or ban accounts. 
 
-
 ## Production Build
 
 Before pushing to your hosting site, run `npm run build` in terminal. This will create a build folder that contains the code your hosting site will be pointed at. You can test this build by typing `npm start`. Keep in mind that `npm start` will let you preview the production build but will **not** auto update.
