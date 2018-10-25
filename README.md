@@ -93,7 +93,8 @@ A full page dialog showing more details about a player.
 ![Screen Shot](public/images/appScreenShots/adminCoachListPage.png)
 
 Admin view of the list of coaches. Admin can suspend, delete, or ban accounts. 
-=======
+
+
 ![Screen Shot](public/images/appScreenShots/adminCoachListPage.png)
 
 Admin view of the list of coaches. Admin can suspend delete or ban accounts. 
