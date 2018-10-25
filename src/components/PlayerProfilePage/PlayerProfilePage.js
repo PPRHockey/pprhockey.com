@@ -214,7 +214,9 @@ class PlayerProfilePage extends Component {
                         <MenuItem value="12">12</MenuItem>
                         <MenuItem value="13">Graduate</MenuItem>
                       </Select>
+                    
                     </FormControl>
+                    <TextField type="text" label="ACT" value={playerInfo.act_score} onChange={this.handleProfileChange} name="act_score" />
                     <TextField type="text" label="GPA" value={playerInfo.gpa} onChange={this.handleProfileChange} name="gpa" />
                     <TextField type="text" label="Weight" value={playerInfo.weight} onChange={this.handleProfileChange} name="weight" />
                     <TextField type="text" label="Height" value={playerInfo.height} onChange={this.handleProfileChange} name="height" />

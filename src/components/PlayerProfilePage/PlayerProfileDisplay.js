@@ -78,6 +78,7 @@ class PlayerProfileDisplay extends Component {
   }
 
   logout = () => {
+    this.props.dispatch({type: 'RESET_PLAYER_INFO'});
     this.props.dispatch(triggerLogout());
   }
 

@@ -47,7 +47,6 @@ class PlayerProfileDialog extends React.Component {
       <div className="dialogContainer">
         <Button variant="contained" color="primary" onClick={this.handleClickOpen}>Edit Profile</Button>
         <Dialog
-          scroll='paper'
           fullScreen
           open={this.state.open}
           onClose={this.handleClose}

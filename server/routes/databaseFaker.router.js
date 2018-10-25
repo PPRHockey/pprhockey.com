@@ -87,7 +87,7 @@ router.post('/', (req, res) => {
         if (positionId === 3 || positionId === 2) {
             goals = Math.round(Math.random() * (100 - 1) + 1);
             assists = Math.round(Math.random() * (100 - 1) + 1);
-            points = Math.round(Math.random() * (150 - 1) + 1);
+            points = Math.round(Math.random() * (49 - 1) + 1);
         }
         //if goalie
         else if (positionId === 4) {

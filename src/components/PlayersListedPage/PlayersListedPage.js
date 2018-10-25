@@ -323,7 +323,6 @@ class PlayersListedPage extends Component {
         <div>
           {/* Form for searching by name/stats */}
           <form className="search-form" onSubmit={this.sendSortBy}>
-            {JSON.stringify(this.state)}
             <div className="form-column">
               <h3>Search Players By:</h3>
               <div className="form-container">
@@ -349,7 +348,7 @@ class PlayersListedPage extends Component {
             {/* Link for downloading a csv file of the players list */}
             <CSVLink data={csvData} className="color-red" seperator={","} filename={"hockey-players.csv"} target="_blank">
               <Button variant="contained"
-                color="primary">Download Players
+                color="primary">Download All Players
               </Button>
             </CSVLink>
           </div>
